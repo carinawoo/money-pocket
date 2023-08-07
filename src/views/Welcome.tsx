@@ -7,7 +7,9 @@ export const Welcome = defineComponent({
   setup: (props, context) => {
     return () => <div class={s.wrapper}>
       <header>
-        <img src={logo} />
+        <svg>
+          <use xlinkHref='#logo'></use>
+        </svg>
         <h1>口袋记账</h1>
       </header>
       <main class={s.main}>
